@@ -27,6 +27,8 @@
     "bookshelf": "^0.12.1",
     "hapi": "14.2.0",
     "hapi-bookshelf-serializer": "^2.1.0",
+    "hapi-format-error": "^1.1.0",
+    "joi": "12",
     "knex": "^0.14.4",
     "pg": "^7.4.1"
   },
