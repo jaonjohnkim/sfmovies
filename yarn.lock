@@ -1249,6 +1249,10 @@ hapi-bookshelf-serializer@^2.1.0:
     bluebird "^2.9.34"
     boom "^2.8.0"
 
+hapi-format-error@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/hapi-format-error/-/hapi-format-error-1.1.0.tgz#28d97f82b40f1b1d1b62b0215eab1cdfe983bbde"
+
 hapi@14.2.0:
   version "14.2.0"
   resolved "https://registry.yarnpkg.com/hapi/-/hapi-14.2.0.tgz#e4fe2fc182598a0f81e87b41b6be0fbd31c75409"
@@ -1645,6 +1649,12 @@ isemail@2.x.x:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/isemail/-/isemail-2.2.1.tgz#0353d3d9a62951080c262c2aa0a42b8ea8e9e2a6"
 
+isemail@3.x.x:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/isemail/-/isemail-3.1.1.tgz#e8450fe78ff1b48347db599122adcd0668bd92b5"
+  dependencies:
+    punycode "2.x.x"
+
 isexe@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
@@ -1700,6 +1710,14 @@ joi@10.x.x:
     hoek "4.x.x"
     isemail "2.x.x"
     items "2.x.x"
+    topo "2.x.x"
+
+joi@12:
+  version "12.0.0"
+  resolved "https://registry.yarnpkg.com/joi/-/joi-12.0.0.tgz#46f55e68f4d9628f01bbb695902c8b307ad8d33a"
+  dependencies:
+    hoek "4.x.x"
+    isemail "3.x.x"
     topo "2.x.x"
 
 joi@9.x.x:
@@ -2597,6 +2615,10 @@ pstree.remy@^1.1.0:
   resolved "https://registry.yarnpkg.com/pstree.remy/-/pstree.remy-1.1.0.tgz#f2af27265bd3e5b32bbfcc10e80bac55ba78688b"
   dependencies:
     ps-tree "^1.1.0"
+
+punycode@2.x.x:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.0.tgz#5f863edc89b96db09074bad7947bf09056ca4e7d"
 
 punycode@^1.4.1:
   version "1.4.1"
