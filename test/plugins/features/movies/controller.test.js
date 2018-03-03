@@ -18,6 +18,7 @@ describe('movie controller', () => {
       })
       .then((movie) => {
         expect(movie.get('title')).to.eql(payload.title);
+        expect(movie.get('name')).to.eql(payload.title);
       });
     });
 
