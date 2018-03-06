@@ -7,11 +7,11 @@ describe('movie controller', () => {
   describe('create', () => {
 
     it('creates a movie', () => {
-      const payload = { name: 'WALL-E' };
+      const payload = { title: 'WALL-E' };
 
       return Controller.create(payload)
       .then((movie) => {
-        expect(movie.get('name')).to.eql(payload.name);
+        expect(movie.get('name')).to.eql(payload.title);
       });
     });
 

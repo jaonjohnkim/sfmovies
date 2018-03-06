@@ -21,4 +21,19 @@ describe('movies integration', () => {
 
   });
 
+  describe('responds with the correct error', () => {
+
+    it('responds with a 422 for mismatched payload property', () => {
+      return Movies.inject({
+        url: '/movies',
+        method: 'POST',
+        payload: { asdf: 'Wrong Prop' }
+      })
+      .then((response) => {
+        expect(response.statusCode).to.eql(422);
+      });
+    });
+
+  });
+
 });
