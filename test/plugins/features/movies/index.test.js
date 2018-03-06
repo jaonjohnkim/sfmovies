@@ -23,7 +23,7 @@ describe('movies integration', () => {
 
   describe('responds with the correct error', () => {
 
-    it('responds with a 422 for mismatched payload property', () => {
+    it('responds with a 422 and correct message for mismatched payload property', () => {
       return Movies.inject({
         url: '/movies',
         method: 'POST',
@@ -31,6 +31,7 @@ describe('movies integration', () => {
       })
       .then((response) => {
         expect(response.statusCode).to.eql(422);
+        expect(response.result.error.message).to.eql('title is required');
       });
     });
 
