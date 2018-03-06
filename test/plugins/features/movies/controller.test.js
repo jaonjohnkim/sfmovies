@@ -11,7 +11,7 @@ describe('movie controller', () => {
 
       return Controller.create(payload)
       .then((movie) => {
-        expect(movie.get('name')).to.eql(payload.title);
+        expect(movie.get('name')).to.eql(payload.name);
       });
     });
 
