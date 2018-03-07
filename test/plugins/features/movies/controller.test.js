@@ -61,9 +61,6 @@ describe('movie controller', () => {
 
     after(() => {
       return new Movie().where('name', 'Sample Movie').destroy();
-      // .then((response) => {
-      //   console.log('DESTROY RESPONSE', response);
-      // });
     });
 
   });
