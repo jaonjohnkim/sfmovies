@@ -1,7 +1,9 @@
 'use strict';
 
+const MOVIES = 'movies';
+
 exports.up = (Knex, Promise) => {
-  return Knex.raw('UPDATE movies SET name = title WHERE name IS NULL');
+  return Knex.raw(`UPDATE ${MOVIES} SET name = title WHERE name IS NULL`);
 };
 
 exports.down = (Knex, Promise) => {

@@ -1,7 +1,9 @@
 'use strict';
 
+const MOVIES = 'movies';
+
 exports.up = (Knex, Promise) => {
-  return Knex.schema.table('movies', (table) => {
+  return Knex.schema.table(MOVIES, (table) => {
     table.text('name');
   })
   .then(() => {
@@ -10,7 +12,7 @@ exports.up = (Knex, Promise) => {
 };
 
 exports.down = (Knex, Promise) => {
-  return Knex.schema.table('movies', (table) => {
+  return Knex.schema.table(MOVIES, (table) => {
     table.dropColumn('name');
   })
   .then(() => {
