@@ -1,10 +1,11 @@
 'use strict';
 
-const Movies = require('./data/movies');
+const moviesSeed = require('./scripts/01_movies_seed');
+const locationsSeed = require('./scripts/02_locations_seed');
+const moviesLocationsSeed = require('./scripts/03_movies_locations_seed');
 
 exports.seed = (Knex) => {
-  return Knex('movies').truncate()
-  .then(() => {
-    return Knex('movies').insert(Movies);
-  });
+  return moviesSeed.seed(Knex)
+  .then(() => locationsSeed.seed(Knex))
+  .then(() => moviesLocationsSeed.seed(Knex));
 };
