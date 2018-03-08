@@ -34,63 +34,85 @@ describe('movies integration', () => {
       });
     });
 
-    let sampleMovie = {
-      title: 'Sample Movie',
-      release_year: 9999
-    };
+    const sampleMovies = [
+      {
+        name: 'Sample Movie',
+        release_year: 9989
+      },
+      {
+        name: 'Sample Movie 2',
+        release_year: 9988
+      },
+      {
+        name: 'Sample Movie 3',
+        release_year: 9987
+      },
+      {
+        name: 'Sample Movie 4',
+        release_year: 9986
+      }
+    ];
 
     before(() => {
-      return Movies.inject({
-        url: '/movies',
-        method: 'POST',
-        payload: sampleMovie
-      }).then((response) => {
-        sampleMovie = response.result;
-      });
-    });
-
-    it('gets a movie with an id', () => {
-      return Movies.inject({
-        url: `/movies?id=${sampleMovie.id}`,
-        method: 'GET'
-      }).then((response) => {
-        expect(response.statusCode).to.eql(200);
-        expect(response.result).to.eql(sampleMovie);
+      Promise.all(sampleMovies.map((movie) => new Movie().save(movie)))
+      .then((movies) => {
+        movies.forEach((movie, index) => {
+          sampleMovies[index].id = movie.get('id');
+          sampleMovies[index].title = sampleMovies[index].name;
+          sampleMovies[index].object = 'movie';
+          Reflect.deleteProperty(sampleMovies[index], 'name');
+        });
       });
     });
 
     it('gets a movie with a release year', () => {
       return Movies.inject({
-        url: `/movies?release_year=${sampleMovie.release_year}`,
+        url: '/movies?release_year=9989',
         method: 'GET'
       }).then((response) => {
         expect(response.statusCode).to.eql(200);
-        expect(response.result).to.eql(sampleMovie);
+        expect(response.result[0]).to.eql(sampleMovies[0]);
       });
     });
 
     it('gets a movie with a title', () => {
       return Movies.inject({
-        url: `/movies?title=${sampleMovie.title}`,
+        url: '/movies?title=Sample Movie',
         method: 'GET'
       }).then((response) => {
         expect(response.statusCode).to.eql(200);
-        expect(response.result).to.eql(sampleMovie);
+        response.result.forEach((movie) => {
+          const matched = sampleMovies.find((sample) => sample.id === movie.id);
+          expect(matched).to.eql(movie);
+        });
       });
     });
 
     it('gets a movie with a release year and title', () => {
       return Movies.inject({
-        url: `/movies?title=${sampleMovie.title}&release_year=${sampleMovie.release_year}`,
+        url: '/movies?title=Sample Movie&release_year=9987',
         method: 'GET'
       }).then((response) => {
         expect(response.statusCode).to.eql(200);
-        expect(response.result).to.eql(sampleMovie);
+        expect(response.result[0]).to.eql(sampleMovies[2]);
+      });
+    });
+
+    it('gets a movie with a release year range', () => {
+      return Movies.inject({
+        url: '/movies?release_year_range=9987-9989',
+        method: 'GET'
+      }).then((response) => {
+        expect(response.statusCode).to.eql(200);
+        response.result.forEach((movie) => {
+          const matched = sampleMovies.find((sample) => sample.id === movie.id);
+          expect(matched).to.eql(movie);
+        });
       });
     });
 
     after(() => {
-      return new Movie().where('name', 'Sample Movie').destroy();
+      return new Movie().where('name', 'LIKE', 'Sa%').destroy();
     });
 
   });
