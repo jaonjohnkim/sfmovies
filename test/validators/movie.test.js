@@ -94,7 +94,6 @@ describe('movie validator', () => {
 
         expect(result.error.details[0].path).to.eql('release_year');
         expect(result.error.details[0].type).to.eql('number.min');
-
       });
 
       it('is limited to 4 digits', () => {
@@ -121,9 +120,10 @@ describe('movie validator', () => {
 
         expect(result.error.details[0].path).to.eql('release_year_range');
         expect(result.error.details[0].type).to.eql('string.regex.base');
-
       });
 
     });
+
   });
+
 });

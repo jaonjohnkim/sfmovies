@@ -7,7 +7,7 @@ env:
 before_script:
   - yarn db:setup:user
   - yarn db:reset
-  - psql -c 'CREATE EXTENSION fuzzystrmatch;' -U sfmovies_user
+  - psql --username postgres --dbname sfmovies_test -c 'CREATE EXTENSION fuzzystrmatch;'
 script:
   - yarn lint
   - yarn test
