@@ -3,6 +3,7 @@
 const Controller = require('../../../../lib/plugins/features/movies/controller');
 const Knex       = require('../../../../lib/libraries/knex');
 const Movie      = require('../../../../lib/models/movie');
+const Bluebird   = require('bluebird');
 
 describe('movie controller', () => {
 
@@ -59,7 +60,7 @@ describe('movie controller', () => {
 
     before(() => {
       return Knex.raw('TRUNCATE movies CASCADE')
-      .then(() => Promise.all(sampleMovies.map((movie) => new Movie().save(movie))))
+      .then(() => Bluebird.all(sampleMovies.map((movie) => new Movie().save(movie))))
       .then((movies) => {
         movies.forEach((movie, index) => {
           sampleMovies[index].id = movie.get('id');

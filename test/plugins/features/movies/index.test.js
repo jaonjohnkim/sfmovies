@@ -1,8 +1,9 @@
 'use strict';
 
-const Knex   = require('../../../../lib/libraries/knex');
-const Movies = require('../../../../lib/server');
-const Movie  = require('../../../../lib/models/movie');
+const Knex     = require('../../../../lib/libraries/knex');
+const Movies   = require('../../../../lib/server');
+const Movie    = require('../../../../lib/models/movie');
+const Bluebird = require('bluebird');
 
 describe('movies integration', () => {
 
@@ -46,7 +47,7 @@ describe('movies integration', () => {
 
     before(() => {
       return Knex.raw('TRUNCATE movies CASCADE')
-      .then(() => Promise.all(sampleMovies.map((movie) => new Movie().save(movie))))
+      .then(() => Bluebird.all(sampleMovies.map((movie) => new Movie().save(movie))))
       .then((movies) => {
         movies.forEach((movie, index) => {
           sampleMovies[index].id = movie.get('id');
