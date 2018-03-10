@@ -5,6 +5,6 @@ module.exports = {
   DB_NAME: 'sfmovies_test',
   DB_PASSWORD: '',
   DB_PORT: 5432,
-  DB_USER: 'postgres',
+  DB_USER: 'sfmovies_user',
   PORT: 3000
 };
