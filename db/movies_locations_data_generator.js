@@ -1,7 +1,7 @@
 'use strict';
 
 const fs = require('fs');
-const util = require('util');
+
 const movies_locations = [];
 
 for (let i = 1; i < 299; i++) {
@@ -19,5 +19,7 @@ for (let i = 1; i < 275; i++) {
 }
 
 fs.writeFile('./seeds/data/movies_locations.json', JSON.stringify(movies_locations), 'utf8', (err) => {
-  if (err) throw err;
-})
+  if (err) {
+    throw err;
+  }
+});
