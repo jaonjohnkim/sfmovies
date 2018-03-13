@@ -1,0 +1,896 @@
+[
+  {
+    "location": "New York, New York"
+  },
+  {
+    "location": "Los Angeles, California"
+  },
+  {
+    "location": "Chicago, Illinois"
+  },
+  {
+    "location": "Houston, Texas"
+  },
+  {
+    "location": "Philadelphia, Pennsylvania"
+  },
+  {
+    "location": "Phoenix, Arizona"
+  },
+  {
+    "location": "San Antonio, Texas"
+  },
+  {
+    "location": "San Diego, California"
+  },
+  {
+    "location": "Detroit, Michigan"
+  },
+  {
+    "location": "San Jose, California"
+  },
+  {
+    "location": "Austin, Texas"
+  },
+  {
+    "location": "Jacksonville, Florida"
+  },
+  {
+    "location": "San Francisco, California"
+  },
+  {
+    "location": "Indianapolis, Indiana"
+  },
+  {
+    "location": "Columbus, Ohio"
+  },
+  {
+    "location": "Fort Worth, Texas"
+  },
+  {
+    "location": "Charlotte, North Carolina"
+  },
+  {
+    "location": "Seattle, Washington"
+  },
+  {
+    "location": "El Paso, Texas"
+  },
+  {
+    "location": "Dallas, Texas"
+  },
+  {
+    "location": "Denver, Colorado"
+  },
+  {
+    "location": "Washington, District of Columbia"
+  },
+  {
+    "location": "Memphis, Tennessee"
+  },
+  {
+    "location": "Boston, Massachusetts"
+  },
+  {
+    "location": "Nashville, Tennessee"
+  },
+  {
+    "location": "Baltimore, Maryland"
+  },
+  {
+    "location": "Oklahoma City, Oklahoma"
+  },
+  {
+    "location": "Portland, Oregon"
+  },
+  {
+    "location": "Las Vegas, Nevada"
+  },
+  {
+    "location": "Louisville, Kentucky"
+  },
+  {
+    "location": "Milwaukee, Wisconsin"
+  },
+  {
+    "location": "Albuquerque, New Mexico"
+  },
+  {
+    "location": "Tucson, Arizona"
+  },
+  {
+    "location": "Fresno, California"
+  },
+  {
+    "location": "Sacramento, California"
+  },
+  {
+    "location": "Long Beach, California"
+  },
+  {
+    "location": "Kansas City, Missouri"
+  },
+  {
+    "location": "Mesa, Arizona"
+  },
+  {
+    "location": "Atlanta, Georgia"
+  },
+  {
+    "location": "Virginia Beach, Virginia"
+  },
+  {
+    "location": "Omaha, Nebraska"
+  },
+  {
+    "location": "Colorado Springs, Colorado"
+  },
+  {
+    "location": "Raleigh, North Carolina"
+  },
+  {
+    "location": "Miami, Florida"
+  },
+  {
+    "location": "Oakland, California"
+  },
+  {
+    "location": "Minneapolis, Minnesota"
+  },
+  {
+    "location": "Tulsa, Oklahoma"
+  },
+  {
+    "location": "Cleveland, Ohio"
+  },
+  {
+    "location": "Wichita, Kansas"
+  },
+  {
+    "location": "New Orleans, Louisiana"
+  },
+  {
+    "location": "Arlington, Texas"
+  },
+  {
+    "location": "Bakersfield, California"
+  },
+  {
+    "location": "Tampa, Florida"
+  },
+  {
+    "location": "Aurora, Colorado"
+  },
+  {
+    "location": "Honolulu, Hawai'i"
+  },
+  {
+    "location": "Anaheim, California"
+  },
+  {
+    "location": "Santa Ana, California"
+  },
+  {
+    "location": "Corpus Christi, Texas"
+  },
+  {
+    "location": "Riverside, California"
+  },
+  {
+    "location": "St. Louis, Missouri"
+  },
+  {
+    "location": "Lexington, Kentucky"
+  },
+  {
+    "location": "Pittsburgh, Pennsylvania"
+  },
+  {
+    "location": "Stockton, California"
+  },
+  {
+    "location": "Anchorage, Alaska"
+  },
+  {
+    "location": "Cincinnati, Ohio"
+  },
+  {
+    "location": "Saint Paul, Minnesota"
+  },
+  {
+    "location": "Greensboro, North Carolina"
+  },
+  {
+    "location": "Toledo, Ohio"
+  },
+  {
+    "location": "Newark, New Jersey"
+  },
+  {
+    "location": "Plano, Texas"
+  },
+  {
+    "location": "Henderson, Nevada"
+  },
+  {
+    "location": "Lincoln, Nebraska"
+  },
+  {
+    "location": "Orlando, Florida"
+  },
+  {
+    "location": "Jersey City, New Jersey"
+  },
+  {
+    "location": "Chula Vista, California"
+  },
+  {
+    "location": "Buffalo, New York"
+  },
+  {
+    "location": "Fort Wayne, Indiana"
+  },
+  {
+    "location": "Chandler, Arizona"
+  },
+  {
+    "location": "St. Petersburg, Florida"
+  },
+  {
+    "location": "Laredo, Texas"
+  },
+  {
+    "location": "Durham, North Carolina"
+  },
+  {
+    "location": "Irvine, California"
+  },
+  {
+    "location": "Madison, Wisconsin"
+  },
+  {
+    "location": "Norfolk, Virginia"
+  },
+  {
+    "location": "Lubbock, Texas"
+  },
+  {
+    "location": "Gilbert, Arizona"
+  },
+  {
+    "location": "Winston–Salem, North Carolina"
+  },
+  {
+    "location": "Glendale, Arizona"
+  },
+  {
+    "location": "Reno, Nevada"
+  },
+  {
+    "location": "Hialeah, Florida"
+  },
+  {
+    "location": "Garland, Texas"
+  },
+  {
+    "location": "Chesapeake, Virginia"
+  },
+  {
+    "location": "Irving, Texas"
+  },
+  {
+    "location": "North Las Vegas, Nevada"
+  },
+  {
+    "location": "Scottsdale, Arizona"
+  },
+  {
+    "location": "Baton Rouge, Louisiana"
+  },
+  {
+    "location": "Fremont, California"
+  },
+  {
+    "location": "Richmond, Virginia"
+  },
+  {
+    "location": "Boise, Idaho"
+  },
+  {
+    "location": "San Bernardino, California"
+  },
+  {
+    "location": "Birmingham, Alabama"
+  },
+  {
+    "location": "Spokane, Washington"
+  },
+  {
+    "location": "Rochester, New York"
+  },
+  {
+    "location": "Modesto, California"
+  },
+  {
+    "location": "Des Moines, Iowa"
+  },
+  {
+    "location": "Oxnard, California"
+  },
+  {
+    "location": "Tacoma, Washington"
+  },
+  {
+    "location": "Fontana, California"
+  },
+  {
+    "location": "Fayetteville, North Carolina"
+  },
+  {
+    "location": "Moreno Valley, California"
+  },
+  {
+    "location": "Columbus, Georgia"
+  },
+  {
+    "location": "Huntington Beach, California"
+  },
+  {
+    "location": "Yonkers, New York"
+  },
+  {
+    "location": "Montgomery, Alabama"
+  },
+  {
+    "location": "Aurora, Illinois"
+  },
+  {
+    "location": "Glendale, California"
+  },
+  {
+    "location": "Shreveport, Louisiana"
+  },
+  {
+    "location": "Akron, Ohio"
+  },
+  {
+    "location": "Little Rock, Arkansas"
+  },
+  {
+    "location": "Amarillo, Texas"
+  },
+  {
+    "location": "Augusta, Georgia"
+  },
+  {
+    "location": "Mobile, Alabama"
+  },
+  {
+    "location": "Grand Rapids, Michigan"
+  },
+  {
+    "location": "Salt Lake City, Utah"
+  },
+  {
+    "location": "Huntsville, Alabama"
+  },
+  {
+    "location": "Tallahassee, Florida"
+  },
+  {
+    "location": "Grand Prairie, Texas"
+  },
+  {
+    "location": "Overland Park, Kansas"
+  },
+  {
+    "location": "Knoxville, Tennessee"
+  },
+  {
+    "location": "Brownsville, Texas"
+  },
+  {
+    "location": "Worcester, Massachusetts"
+  },
+  {
+    "location": "Newport News, Virginia"
+  },
+  {
+    "location": "Santa Clarita, California"
+  },
+  {
+    "location": "Providence, Rhode Island"
+  },
+  {
+    "location": "Fort Lauderdale, Florida"
+  },
+  {
+    "location": "Garden Grove, California"
+  },
+  {
+    "location": "Oceanside, California"
+  },
+  {
+    "location": "Rancho Cucamonga, California"
+  },
+  {
+    "location": "Santa Rosa, California"
+  },
+  {
+    "location": "Port St. Lucie, Florida"
+  },
+  {
+    "location": "Chattanooga, Tennessee"
+  },
+  {
+    "location": "Tempe, Arizona"
+  },
+  {
+    "location": "Jackson, Mississippi"
+  },
+  {
+    "location": "Cape Coral, Florida"
+  },
+  {
+    "location": "Vancouver, Washington"
+  },
+  {
+    "location": "Ontario, California"
+  },
+  {
+    "location": "Sioux Falls, South Dakota"
+  },
+  {
+    "location": "Peoria, Arizona"
+  },
+  {
+    "location": "Springfield, Missouri"
+  },
+  {
+    "location": "Pembroke Pines, Florida"
+  },
+  {
+    "location": "Elk Grove, California"
+  },
+  {
+    "location": "Salem, Oregon"
+  },
+  {
+    "location": "Corona, California"
+  },
+  {
+    "location": "Lancaster, California"
+  },
+  {
+    "location": "Eugene, Oregon"
+  },
+  {
+    "location": "Palmdale, California"
+  },
+  {
+    "location": "McKinney, Texas"
+  },
+  {
+    "location": "Salinas, California"
+  },
+  {
+    "location": "Fort Collins, Colorado"
+  },
+  {
+    "location": "Cary, North Carolina"
+  },
+  {
+    "location": "Hayward, California"
+  },
+  {
+    "location": "Springfield, Massachusetts"
+  },
+  {
+    "location": "Pasadena, Texas"
+  },
+  {
+    "location": "Macon, Georgia"
+  },
+  {
+    "location": "Pomona, California"
+  },
+  {
+    "location": "Alexandria, Virginia"
+  },
+  {
+    "location": "Escondido, California"
+  },
+  {
+    "location": "Sunnyvale, California"
+  },
+  {
+    "location": "Lakewood, Colorado"
+  },
+  {
+    "location": "Kansas City, Kansas"
+  },
+  {
+    "location": "Rockford, Illinois"
+  },
+  {
+    "location": "Torrance, California"
+  },
+  {
+    "location": "Hollywood, Florida"
+  },
+  {
+    "location": "Joliet, Illinois"
+  },
+  {
+    "location": "Bridgeport, Connecticut"
+  },
+  {
+    "location": "Clarksville, Tennessee"
+  },
+  {
+    "location": "Paterson, New Jersey"
+  },
+  {
+    "location": "Naperville, Illinois"
+  },
+  {
+    "location": "Frisco, Texas"
+  },
+  {
+    "location": "Mesquite, Texas"
+  },
+  {
+    "location": "Savannah, Georgia"
+  },
+  {
+    "location": "Syracuse, New York"
+  },
+  {
+    "location": "Dayton, Ohio"
+  },
+  {
+    "location": "Pasadena, California"
+  },
+  {
+    "location": "Orange, California"
+  },
+  {
+    "location": "Fullerton, California"
+  },
+  {
+    "location": "McAllen, Texas"
+  },
+  {
+    "location": "Killeen, Texas"
+  },
+  {
+    "location": "Hampton, Virginia"
+  },
+  {
+    "location": "Bellevue, Washington"
+  },
+  {
+    "location": "Warren, Michigan"
+  },
+  {
+    "location": "Miramar, Florida"
+  },
+  {
+    "location": "West Valley City, Utah"
+  },
+  {
+    "location": "Olathe, Kansas"
+  },
+  {
+    "location": "Columbia, South Carolina"
+  },
+  {
+    "location": "Sterling Heights, Michigan"
+  },
+  {
+    "location": "Thornton, Colorado"
+  },
+  {
+    "location": "New Haven, Connecticut"
+  },
+  {
+    "location": "Waco, Texas"
+  },
+  {
+    "location": "Charleston, South Carolina"
+  },
+  {
+    "location": "Thousand Oaks, California"
+  },
+  {
+    "location": "Visalia, California"
+  },
+  {
+    "location": "Cedar Rapids, Iowa"
+  },
+  {
+    "location": "Elizabeth, New Jersey"
+  },
+  {
+    "location": "Roseville, California"
+  },
+  {
+    "location": "Gainesville, Florida"
+  },
+  {
+    "location": "Carrollton, Texas"
+  },
+  {
+    "location": "Stamford, Connecticut"
+  },
+  {
+    "location": "Denton, Texas"
+  },
+  {
+    "location": "Midland, Texas"
+  },
+  {
+    "location": "Coral Springs, Florida"
+  },
+  {
+    "location": "Concord, California"
+  },
+  {
+    "location": "Topeka, Kansas"
+  },
+  {
+    "location": "Simi Valley, California"
+  },
+  {
+    "location": "Surprise, Arizona"
+  },
+  {
+    "location": "Lafayette, Louisiana"
+  },
+  {
+    "location": "Kent, Washington"
+  },
+  {
+    "location": "Hartford, Connecticut"
+  },
+  {
+    "location": "Santa Clara, California"
+  },
+  {
+    "location": "Victorville, California"
+  },
+  {
+    "location": "Abilene, Texas"
+  },
+  {
+    "location": "Murfreesboro, Tennessee"
+  },
+  {
+    "location": "Evansville, Indiana"
+  },
+  {
+    "location": "Vallejo, California"
+  },
+  {
+    "location": "Athens, Georgia"
+  },
+  {
+    "location": "Allentown, Pennsylvania"
+  },
+  {
+    "location": "Berkeley, California"
+  },
+  {
+    "location": "Norman, Oklahoma"
+  },
+  {
+    "location": "Ann Arbor, Michigan"
+  },
+  {
+    "location": "Beaumont, Texas"
+  },
+  {
+    "location": "Independence, Missouri"
+  },
+  {
+    "location": "Columbia, Missouri"
+  },
+  {
+    "location": "Springfield, Illinois"
+  },
+  {
+    "location": "El Monte, California"
+  },
+  {
+    "location": "Fargo, North Dakota"
+  },
+  {
+    "location": "Peoria, Illinois"
+  },
+  {
+    "location": "Provo, Utah"
+  },
+  {
+    "location": "Lansing, Michigan"
+  },
+  {
+    "location": "Odessa, Texas"
+  },
+  {
+    "location": "Downey, California"
+  },
+  {
+    "location": "Wilmington, North Carolina"
+  },
+  {
+    "location": "Arvada, Colorado"
+  },
+  {
+    "location": "Costa Mesa, California"
+  },
+  {
+    "location": "Round Rock, Texas"
+  },
+  {
+    "location": "Carlsbad, California"
+  },
+  {
+    "location": "Miami Gardens, Florida"
+  },
+  {
+    "location": "Westminster, Colorado"
+  },
+  {
+    "location": "Inglewood, California"
+  },
+  {
+    "location": "Rochester, Minnesota"
+  },
+  {
+    "location": "Fairfield, California"
+  },
+  {
+    "location": "Elgin, Illinois"
+  },
+  {
+    "location": "West Jordan, Utah"
+  },
+  {
+    "location": "Clearwater, Florida"
+  },
+  {
+    "location": "Manchester, New Hampshire"
+  },
+  {
+    "location": "Lowell, Massachusetts"
+  },
+  {
+    "location": "Gresham, Oregon"
+  },
+  {
+    "location": "Cambridge, Massachusetts"
+  },
+  {
+    "location": "Ventura, California"
+  },
+  {
+    "location": "Temecula, California"
+  },
+  {
+    "location": "Waterbury, Connecticut"
+  },
+  {
+    "location": "Antioch, California"
+  },
+  {
+    "location": "Billings, Montana"
+  },
+  {
+    "location": "High Point, North Carolina"
+  },
+  {
+    "location": "Richardson, Texas"
+  },
+  {
+    "location": "Richmond, California"
+  },
+  {
+    "location": "West Covina, California"
+  },
+  {
+    "location": "Pueblo, Colorado"
+  },
+  {
+    "location": "Murrieta, California"
+  },
+  {
+    "location": "Centennial, Colorado"
+  },
+  {
+    "location": "Norwalk, California"
+  },
+  {
+    "location": "North Charleston, South Carolina"
+  },
+  {
+    "location": "Everett, Washington"
+  },
+  {
+    "location": "Pompano Beach, Florida"
+  },
+  {
+    "location": "Daly City, California"
+  },
+  {
+    "location": "Palm Bay, Florida"
+  },
+  {
+    "location": "Burbank, California"
+  },
+  {
+    "location": "Wichita Falls, Texas"
+  },
+  {
+    "location": "Boulder, Colorado"
+  },
+  {
+    "location": "Green Bay, Wisconsin"
+  },
+  {
+    "location": "Broken Arrow, Oklahoma"
+  },
+  {
+    "location": "West Palm Beach, Florida"
+  },
+  {
+    "location": "College Station, Texas"
+  },
+  {
+    "location": "Pearland, Texas"
+  },
+  {
+    "location": "Santa Maria, California"
+  },
+  {
+    "location": "El Cajon, California"
+  },
+  {
+    "location": "San Mateo, California"
+  },
+  {
+    "location": "Lewisville, Texas"
+  },
+  {
+    "location": "Rialto, California"
+  },
+  {
+    "location": "Davenport, Iowa"
+  },
+  {
+    "location": "Lakeland, Florida"
+  },
+  {
+    "location": "Clovis, California"
+  },
+  {
+    "location": "Edison, New Jersey"
+  },
+  {
+    "location": "Sandy Springs, Georgia"
+  },
+  {
+    "location": "Tyler, Texas"
+  },
+  {
+    "location": "Las Cruces, New Mexico"
+  },
+  {
+    "location": "South Bend, Indiana"
+  },
+  {
+    "location": "Farmington Hills, Michigan"
+  },
+  {
+    "location": "Erie, Pennsylvania"
+  }
+]
