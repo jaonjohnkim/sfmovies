@@ -40,23 +40,16 @@ describe('movie controller', () => {
         release_year: 9993
       },
       {
-        name: 'Sa',
+        name: 'Ma',
         release_year: 9994
       },
       {
-        name: 'Samp',
+        name: 'Camp',
         release_year: 9995
       }
     ];
 
     const fields = ['id', 'name', 'release_year'];
-
-    const verify = (movies) => {
-      movies.models.forEach((movie) => {
-        const matched = sampleMovies.find((sample) => sample.id === movie.id);
-        expect(matched).to.eql(movie.attributes);
-      });
-    };
 
     before(() => {
       return Knex.raw('TRUNCATE movies CASCADE')
@@ -74,44 +67,70 @@ describe('movie controller', () => {
 
     fields.forEach((field) => {
       it(`gets a movie by ${field}`, () => {
-        const filter = {};
-
-        return Controller.get(filter[field] = sampleMovies[0][field])
-        .then(verify);
+        return Controller.get({ [field]: sampleMovies[0][field] })
+        .then((movies) => {
+          if (field === 'name') {
+            expect(movies.models.length).to.eql(4);
+            expect(movies.models.map((movie) => movie.attributes)).to.eql(sampleMovies.slice(0, 4));
+          } else {
+            expect(movies.models.length).to.eql(1);
+            expect(movies.models[0].attributes).to.eql(sampleMovies[0]);
+          }
+        });
       });
     });
 
     it('gets a movie by release_year_range', () => {
+      const expectedOutput = sampleMovies.slice(0, 4);
       return Controller.get({ release_year_range: '9990-9993' })
-      .then(verify);
+      .then((movies) => {
+        expect(movies.length).to.eql(4);
+        expect(movies.models.map((movie) => movie.attributes)).to.eql(expectedOutput);
+      });
     });
 
     it('gets a movie by name and release_year', () => {
+      const expectedOutput = sampleMovies[3];
+
       return Controller.get({
         name: sampleMovies[0].name,
         release_year: 9993
       })
-      .then(verify);
+      .then((movie) => {
+        expect(movie.models.length).to.eql(1);
+        expect(movie.models[0].attributes).to.eql(expectedOutput);
+      });
     });
 
     it('gets a movie by name and release_year_range', () => {
+      const expectedOutput = sampleMovies.slice(2, 4);
+
       return Controller.get({
         name: sampleMovies[0].name,
         release_year_range: '9992-9993'
       })
-      .then(verify);
+      .then((movies) => {
+        expect(movies.models.length).to.eql(2);
+        expect(movies.models.map((movie) => movie.attributes)).to.eql(expectedOutput);
+      });
     });
 
     it('gets a movie by fuzzy name', () => {
-      return Controller.get({ name: 'SmpleMovie' })
-      .then(verify);
+      const expectedOutput = sampleMovies[0];
+
+      return Controller.get({ name: 'Smple Movi' })
+      .then((movies) => {
+        expect(movies.models.length).to.eql(1);
+        expect(movies.models[0].attributes).to.eql(expectedOutput);
+      });
     });
 
     it('gets movies by search string length of 2', () => {
       return Controller.get({
-        name: 'Sa'
+        name: 'Ma'
       })
       .then((movies) => {
+        expect(movies.models.length).to.eql(1);
         expect(movies.models[0].attributes).to.eql(sampleMovies[4]);
       });
     });
@@ -127,9 +146,10 @@ describe('movie controller', () => {
 
     it('gets a movie by search string length of 4', () => {
       return Controller.get({
-        name: 'Samp'
+        name: 'Camp'
       })
       .then((movies) => {
+        expect(movies.models.length).to.eql(1);
         expect(movies.models[0].attributes).to.eql(sampleMovies[5]);
       });
     });
@@ -139,6 +159,7 @@ describe('movie controller', () => {
         name: 'Lamp'
       })
       .then((movies) => {
+        expect(movies.models.length).to.eql(1);
         expect(movies.models[0].attributes).to.eql(sampleMovies[5]);
       });
     });
