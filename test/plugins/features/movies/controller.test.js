@@ -49,7 +49,7 @@ describe('movie controller', () => {
       }
     ];
 
-    const fields = ['id', 'name', 'release_year'];
+    const fields = ['id', 'release_year'];
 
     before(() => {
       return Knex.raw('TRUNCATE movies CASCADE')
@@ -69,14 +69,19 @@ describe('movie controller', () => {
       it(`gets a movie by ${field}`, () => {
         return Controller.get({ [field]: sampleMovies[0][field] })
         .then((movies) => {
-          if (field === 'name') {
-            expect(movies.models.length).to.eql(4);
-            expect(movies.models.map((movie) => movie.attributes)).to.eql(sampleMovies.slice(0, 4));
-          } else {
-            expect(movies.models.length).to.eql(1);
-            expect(movies.models[0].attributes).to.eql(sampleMovies[0]);
-          }
+          expect(movies.models.length).to.eql(1);
+          expect(movies.models[0].attributes).to.eql(sampleMovies[0]);
         });
+      });
+    });
+
+    it('gets a movie by name', () => {
+      const expectedOutput = sampleMovies.slice(0, 4);
+
+      return Controller.get({ name: 'Sample Movie' })
+      .then((movies) => {
+        expect(movies.length).to.eql(4);
+        expect(movies.models.map((movie) => movie.attributes)).to.eql(expectedOutput);
       });
     });
 
